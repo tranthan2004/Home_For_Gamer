@@ -1,0 +1,169 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="/views/css/global.css" />
+  <link rel="stylesheet" href="/views/css/signup.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap" />
+</head>
+
+<body>
+  <div class="ng-k">
+    <div class="rectangle-parent">
+      <header class="frame-child"></header>
+      <div class="hfg-3-1-wrapper">
+        <a href="#"><img class="hfg-3-1" loading="lazy" alt="" src="/image/hfg-3-1@2x.png" /></a>
+      </div>
+      <div class="navigation-container-wrapper">
+        <div class="navigation-container">
+          <div class="navigation-container-inner">
+            <div class="rectangle-group">
+              <input type="text" name="" id="" placeholder="Search" style="width: 100%; height: 30px; border: none; " />
+              <div class="frame-item">
+
+              </div>
+              <img class="search-1-icon" loading="lazy" alt="" src="/image/search-1@2x.png" />
+            </div>
+          </div>
+          <div class="page-info">
+            <a class="trang-ch" href="#">Trang chủ</a>
+            <a class="hng-dn" href="#">Hướng dẫn </a>
+            <a class="np-tin" href="#">Nạp tiền</a>
+            <a class="mini-game" href="#">Mini game</a>
+            <a class="tin-tc" href="#">Tin tức</a>
+          </div>
+        </div>
+      </div>
+      <div class="auth-container-wrapper">
+        <div class="auth-container">
+          <button class="rectangle-container" id="groupButton">
+            <div class="frame-inner"></div>
+            <a class="ng-nhp" href="login.html">Đăng nhập</a>
+          </button>
+          <button class="group-button" id="groupButton1">
+            <div class="rectangle-div"></div>
+            <a class="ng-k1" href="signup.html">Đăng ký</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <section class="image-3-parent">
+      <img class="image-3-icon" loading="lazy" alt="" src="/image/image-3@2x.png" />
+
+      <form class="form-ng-k">
+        <div class="form-ng-k-child"></div>
+        <div class="ng-k-wrapper">
+          <h1 class="ng-k2">Đăng ký</h1>
+        </div>
+        <div class="input-fields">
+          <div class="account-input">
+            <div class="required-label">
+              <b class="bt-buc">*Bắt buộc</b>
+            </div>
+            <div class="group-div">
+              <input class="ti-khon" placeholder="Tài khoản*" type="text" />
+            </div>
+            <div class="group-div">
+              <input class="ti-khon" placeholder="Mật khẩu*" type="text" />
+            </div>
+            <div class="group-div">
+              <input class="ti-khon" placeholder="Nhập lại mật khẩu*" type="text" />
+            </div>
+            <div class="rectangle-parent3">
+              <input class="email" placeholder="Email*" type="text" />
+            </div>
+            <div class="rectangle-parent4">
+              <input class="s-in-thoi" placeholder="Số điện thoại*" type="text" />
+            </div>
+          </div>
+
+
+        </div>
+        <div class="frame-parent">
+          <button class="rectangle-parent5">
+            <div class="frame-child6"></div>
+            <b class="ng-k3">Đăng ký</b>
+          </button>
+          <div class="login-link">
+            <div class="login-link-container">
+              <b class="bn-c">Bạn đã có tài khoản? Đăng nhập <a id="login" href="login.jsp">tại đây</a></b>
+
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="footer-child"></div>
+      <div class="footer-content">
+        <img class="hfg-1-1" loading="lazy" alt="" src="/image/hfg-1-1@2x.png" />
+
+        <div class="footer-description-wrapper">
+          <div class="footer-description">
+            <div class="nim-tin-ca-khch-hng-l-ti-parent">
+              <b class="nim-tin-ca">Niềm tin của khách hàng là tài sản quý giá nhất của chúng
+                tôi.</b>
+              <div class="footer-name">
+                <h2 class="footer1">Footer</h2>
+              </div>
+            </div>
+            <b class="website-cho-thu-container">
+              <p class="website-cho-thu">
+                Website cho thuê, mua bán account game uy tín ngoài ra còn cung cấp dịch vụ cho thuê người chơi cùng.
+              </p>
+            </b>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-links-container">
+            <h3 class="thng-tin">THÔNG TIN</h3>
+            <div class="footer-link-labels">
+              <a href="#" style="text-decoration: none; color: white;" class="chnh-sch-bo">&gt; Chính sách bảo mật</a>
+            </div>
+            <div class="footer-link-labels1">
+              <a href="#" style="text-decoration: none; color: white;" class="chnh-sch-bo1">&gt; Chính sách bảo mật</a>
+            </div>
+            <div class="footer-link-labels2">
+              <a href="#" style="text-decoration: none; color: white;" class="hng-dn-np">&gt; Hướng dẫn nạp tiền</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-links">
+        <div class="product-links-container">
+          <div class="product-link-labels">
+            <h3 class="sn-phm">SẢN PHẨM</h3>
+            <div class="ti-khon-lin-minh-wrapper">
+              <a href="#" style="text-decoration: none; color: white;" class="ti-khon-lin">&gt; Tài khoản Liên Minh</a>
+            </div>
+            <div class="ti-khon-teamfight-tactics-wrapper">
+              <a href="#" style="text-decoration: none; color: white;" class="ti-khon-teamfight">&gt; Tài khoản
+                Teamfight Tactics</a>
+            </div>
+            <div class="ti-khon-valorant-wrapper">
+              <a href="#" style="text-decoration: none; color: white;" class="ti-khon-valorant">&gt; Tài khoản
+                Valorant</a>
+            </div>
+            <div class="ti-khon-lin-qun-mobile-wrapper">
+              <a href="#" style="text-decoration: none; color: white;" class="ti-khon-lin1">&gt; Tài khoản Liên Quân
+                Mobile</a>
+            </div>
+          </div>
+          <div class="support">
+            <h3 class="h-tr-khch">HỖ TRỢ KHÁCH HÀNG</h3>
+            <div class="chat">
+              <div class="chat-link">
+                <img class="mask-1-icon" alt="" src="/image/mask-1@2x.png" />
+                <a href="#" style="text-decoration: none; color: white;" class="chat-vi-chng">CHAT VỚI CHÚNG TÔI</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
