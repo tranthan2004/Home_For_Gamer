@@ -26,7 +26,7 @@ public class Bill implements Serializable {
     
     @ManyToOne
     @JoinColumn(name = "cus_id")
-    Userinformation UserInf;
+    UserInformation UserInf;
     
     @OneToMany(mappedBy = "bill")
     List<BillDetail> billDetails;

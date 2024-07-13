@@ -10,6 +10,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class LoginController {
 	@RequestMapping(value="/index/login", method=RequestMethod.GET)
 	public String login() {
+		return "login";
+	}
+	@RequestMapping(value="/index/signup", method=RequestMethod.GET)
+	public String signup() {
 		return "signup";
 	}
 	

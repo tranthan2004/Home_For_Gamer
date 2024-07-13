@@ -41,11 +41,11 @@
         <div class="auth-container">
           <button class="rectangle-container" id="groupButton">
             <div class="frame-inner"></div>
-            <a class="ng-nhp" href="login.html">Đăng nhập</a>
+            <a class="ng-nhp" href="/index/login">Đăng nhập</a>
           </button>
           <button class="group-button" id="groupButton1">
             <div class="rectangle-div"></div>
-            <a class="ng-k1" href="signup.html">Đăng ký</a>
+            <a class="ng-k1" href="/index/signup">Đăng ký</a>
           </button>
         </div>
       </div>
@@ -89,7 +89,7 @@
           </button>
           <div class="login-link">
             <div class="login-link-container">
-              <b class="bn-c">Bạn đã có tài khoản? Đăng nhập <a id="login" href="login.jsp">tại đây</a></b>
+              <b class="bn-c">Bạn đã có tài khoản? Đăng nhập <a id="login" href="/index/login">tại đây</a></b>
 
             </div>
           </div>

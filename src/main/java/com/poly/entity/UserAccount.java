@@ -30,5 +30,5 @@ public class UserAccount implements Serializable {
     private boolean Sell;
     
     @OneToOne(mappedBy = "UserAcc")
-    Userinformation users;
+    UserInformation users;
 }
