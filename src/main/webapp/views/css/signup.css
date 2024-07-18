@@ -914,13 +914,15 @@ input:focus{
 .mask-1-icon {
   height: 66px;
   width: 249px;
-  position: relative;
+  position: absolute; /* Sử dụng absolute để đặt ảnh trong .chat-link */
+  top: 0;
+  left: 0;
   object-fit: cover;
-  display: none;
+  z-index: 1;
 }
 .chat-vi-chng {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 .chat,
 .chat-link,
@@ -939,6 +941,7 @@ input:focus{
   background-position: top;
   white-space: nowrap;
   z-index: 1;
+  position: relative;
 }
 .chat,
 .support {
