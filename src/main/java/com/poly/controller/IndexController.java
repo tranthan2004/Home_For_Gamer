@@ -10,4 +10,16 @@ public class IndexController {
 	public String index() {
 		return "/views/index";
 	}
+	@RequestMapping(value="/index/successPay", method=RequestMethod.GET)
+	public String success() {
+		return "/views/successPay";
+	}
+	@RequestMapping(value="/index/history", method=RequestMethod.GET)
+	public String history() {
+		return "/views/history";
+	}
+	@RequestMapping(value="/index/list", method=RequestMethod.GET)
+	public String list() {
+		return "/views/list";
+	}
 }
