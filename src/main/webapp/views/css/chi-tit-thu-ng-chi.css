@@ -1,0 +1,393 @@
+.footer-child1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-black);
+  width: 1780px;
+  height: 187px;
+}
+.footer7 {
+  position: absolute;
+  top: 54px;
+  left: 509px;
+  font-size: var(--font-size-5xl);
+  display: inline-block;
+  color: var(--color-black);
+  width: 76px;
+  height: 27px;
+}
+.hfg-1-13 {
+  position: absolute;
+  top: 18px;
+  left: 84px;
+  width: 257px;
+  height: 142.3px;
+  object-fit: cover;
+}
+.uy-tn-ngoi3 {
+  margin: 0;
+  white-space: pre-wrap;
+}
+.nim-tin-ca3,
+.website-cho-thu-container3 {
+  position: absolute;
+  top: 93px;
+  left: 378px;
+  display: inline-block;
+  width: 338px;
+}
+.nim-tin-ca3 {
+  top: 43px;
+}
+.mask-1-icon3 {
+  position: absolute;
+  top: 66px;
+  left: 1350px;
+  width: 249px;
+  height: 66px;
+  object-fit: cover;
+}
+.chat-vi-chng3 {
+  position: absolute;
+  top: 90px;
+  left: 1425px;
+  display: inline-block;
+  width: 151px;
+  height: 15.8px;
+}
+.h-tr-khch3,
+.sn-phm3,
+.thng-tin3 {
+  position: absolute;
+  top: 26px;
+  left: 1348px;
+  font-size: var(--font-size-xl);
+}
+.sn-phm3,
+.thng-tin3 {
+  left: 1068px;
+}
+.thng-tin3 {
+  left: 773px;
+}
+.ti-khon-lin6,
+.ti-khon-teamfight3 {
+  position: absolute;
+  top: 57px;
+  left: 1074px;
+}
+.ti-khon-teamfight3 {
+  top: 81px;
+}
+.chnh-sch-bo6,
+.ti-khon-valorant3 {
+  position: absolute;
+  top: 106px;
+  left: 1074px;
+}
+.chnh-sch-bo6 {
+  top: 57px;
+  left: 780px;
+}
+.chnh-sch-bo7,
+.hng-dn-np3,
+.ti-khon-lin7 {
+  position: absolute;
+  top: 81px;
+  left: 780px;
+}
+.hng-dn-np3,
+.ti-khon-lin7 {
+  top: 105px;
+}
+.ti-khon-lin7 {
+  top: 130px;
+  left: 1074px;
+}
+.footer6,
+.group-child18 {
+  position: absolute;
+  top: 1297px;
+  left: 0;
+  width: 1780px;
+  height: 187px;
+}
+.group-child18 {
+  top: 0;
+  border-radius: var(--br-3xs);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 356px;
+  height: 174px;
+}
+.group-child19,
+.h1 {
+  position: absolute;
+  top: 21px;
+  left: 34px;
+}
+.group-child19 {
+  top: 0;
+  left: 0;
+  border-radius: 18px;
+  background-color: var(--color-tomato-300);
+  width: 286px;
+  height: 71px;
+}
+.thu {
+  position: absolute;
+  top: 16px;
+  left: 102px;
+}
+.rectangle-parent17 {
+  position: absolute;
+  top: 78px;
+  left: 35px;
+  width: 286px;
+  height: 71px;
+  color: var(--color-white);
+}
+.rectangle-parent16 {
+  position: absolute;
+  top: 270px;
+  left: 1111px;
+  width: 356px;
+  height: 174px;
+  font-size: var(--font-size-13xl);
+  color: var(--color-tomato-300);
+}
+.x2160-project-riven-lol-league-icon2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  width: 317px;
+  height: 280px;
+  object-fit: cover;
+}
+.ang-sn-sng {
+  position: absolute;
+  top: 293px;
+  left: 44px;
+}
+.x2160-project-riven-lol-league-parent {
+  position: absolute;
+  top: 270px;
+  left: 243px;
+  width: 317px;
+  height: 332px;
+  font-size: var(--font-size-13xl);
+  color: #18b41f;
+}
+.tn1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 48px;
+}
+.c-thu {
+  top: 72px;
+  left: 0;
+  color: #7f7f7f;
+}
+.c-thu,
+.gi,
+.tn-parent {
+  position: absolute;
+}
+.gi {
+  top: 111px;
+  left: 0;
+  font-weight: 600;
+  color: var(--color-tomato-300);
+}
+.tn-parent {
+  top: 270px;
+  left: 597px;
+  width: 158px;
+  height: 140px;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+}
+.thng-tin4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hng-ni {
+  margin-block-start: 0;
+  margin-block-end: 15px;
+}
+.mi-ngi-gh {
+  margin: 0;
+}
+.hng-ni-container,
+.thng-tin-parent {
+  position: absolute;
+  top: 92px;
+  left: 0;
+  font-size: var(--font-size-xl);
+}
+.thng-tin-parent {
+  top: 472px;
+  left: 597px;
+  width: 314px;
+  height: 155px;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+}
+.group-child20,
+.group-child21 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-black);
+  width: 1780px;
+  height: 151.2px;
+}
+.group-child21 {
+  border-radius: var(--br-9xl);
+  background-color: var(--color-white);
+  width: 712.2px;
+  height: 42px;
+}
+.search-1-icon3 {
+  position: absolute;
+  top: 6px;
+  left: 663px;
+  width: 31.1px;
+  height: 31px;
+  object-fit: cover;
+}
+.rectangle-parent18 {
+  position: absolute;
+  top: 22px;
+  left: 533.4px;
+  width: 712.2px;
+  height: 42px;
+}
+.hng-dn3,
+.mini-game3,
+.np-tin3,
+.tin-tc3,
+.trang-ch3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 118.5px;
+}
+.hng-dn3,
+.mini-game3,
+.np-tin3,
+.tin-tc3 {
+  left: 185.9px;
+  width: 130.6px;
+}
+.mini-game3,
+.np-tin3,
+.tin-tc3 {
+  left: 383.8px;
+  width: 98.4px;
+}
+.mini-game3,
+.tin-tc3 {
+  left: 738.4px;
+  width: 84.4px;
+}
+.mini-game3 {
+  left: 549.5px;
+  width: 121.5px;
+}
+.trang-ch-parent1 {
+  position: absolute;
+  top: 96px;
+  left: 478.1px;
+  width: 822.7px;
+  height: 29px;
+  font-size: var(--font-size-5xl);
+}
+.group-child22 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  width: 105.5px;
+  height: 28px;
+}
+.ng-nhp3 {
+  position: absolute;
+  top: 6px;
+  left: 16.1px;
+  display: inline-block;
+  width: 74.3px;
+}
+.group-child23,
+.rectangle-parent19 {
+  position: absolute;
+  width: 105.5px;
+  height: 28px;
+}
+.rectangle-parent19 {
+  top: 29px;
+  left: 1361.1px;
+  cursor: pointer;
+  color: var(--color-red-300);
+}
+.group-child23 {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-red-200);
+}
+.ng-k6 {
+  position: absolute;
+  top: 6px;
+  left: 23.1px;
+  display: inline-block;
+  width: 56.3px;
+}
+.rectangle-parent20 {
+  position: absolute;
+  top: 29px;
+  left: 1494.7px;
+  width: 105.5px;
+  height: 28px;
+  cursor: pointer;
+}
+.hfg-3-13 {
+  position: absolute;
+  top: 12px;
+  left: 243.1px;
+  width: 140.6px;
+  height: 128.2px;
+  object-fit: cover;
+}
+.header3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1780px;
+  height: 151.2px;
+}
+.chi-tit-thu-ng-chi-child {
+  position: absolute;
+  top: 442.5px;
+  left: 595.5px;
+  border-top: 3px solid #9f9f9f;
+  box-sizing: border-box;
+  width: 463px;
+  height: 3px;
+}
+.chi-tit-thu-ng-chi {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 1484px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}

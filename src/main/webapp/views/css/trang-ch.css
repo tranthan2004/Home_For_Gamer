@@ -1,0 +1,594 @@
+.trang-ch-child {
+  position: absolute;
+  top: 743px;
+  left: 395px;
+  background-color: var(--color-gainsboro);
+  width: 981px;
+  height: 38px;
+}
+.dng-ch-chy {
+  position: absolute;
+  top: 746px;
+  left: 676px;
+  display: inline-block;
+  width: 520px;
+  height: 24px;
+}
+.trang-ch-item {
+  position: absolute;
+  top: 2206px;
+  left: 180px;
+  background-color: var(--color-whitesmoke-200);
+  width: 1415px;
+  height: 431px;
+}
+.lin-qun-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 242.8px;
+  height: 27.5px;
+}
+.group-child99 {
+  position: absolute;
+  top: 32.2px;
+  left: 0;
+  border-top: 5px solid var(--color-red-500);
+  box-sizing: border-box;
+  width: 398px;
+  height: 5px;
+}
+.lin-qun-mobile-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 393px;
+  height: 32.2px;
+}
+.ezgifcom-video-to-gif-convert-icon,
+.icon {
+  position: absolute;
+  top: 39px;
+  left: 0;
+  width: 246px;
+  height: 339px;
+  object-fit: cover;
+}
+.ezgifcom-video-to-gif-convert-icon {
+  top: 0;
+  width: 357px;
+  height: 268px;
+}
+.nick {
+  position: absolute;
+  top: 275px;
+  left: 131px;
+}
+.group-child100,
+.xem-ngay {
+  position: absolute;
+  top: 314px;
+  left: 135px;
+}
+.group-child100 {
+  top: 301px;
+  left: 88px;
+  border-radius: var(--br-smi);
+  border: 1px solid var(--color-red-200);
+  box-sizing: border-box;
+  width: 181px;
+  height: 46px;
+}
+.ezgifcom-video-to-gif-convert-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 357px;
+  height: 347px;
+}
+.nick-tm-trung {
+  position: absolute;
+  top: 275px;
+  left: 109px;
+}
+.ezgifcom-video-to-gif-convert-group {
+  position: absolute;
+  top: 0;
+  left: 362px;
+  width: 357px;
+  height: 347px;
+}
+.nick-cao-cp {
+  position: absolute;
+  top: 275px;
+  left: 119px;
+}
+.ezgifcom-video-to-gif-convert-container,
+.phn-chia-gi {
+  position: absolute;
+  top: 0;
+  left: 724px;
+  width: 357px;
+  height: 347px;
+}
+.phn-chia-gi {
+  top: 39px;
+  left: 272px;
+  width: 1081px;
+  font-size: var(--font-size-base);
+  color: var(--color-red-200);
+}
+.banner-1-icon,
+.lin-quan {
+  position: absolute;
+  top: 2227px;
+  left: 205px;
+  width: 1353px;
+  height: 386px;
+}
+.banner-1-icon {
+  top: 212px;
+  left: 179px;
+  width: 1415px;
+  height: 504px;
+  object-fit: cover;
+}
+.footer-child11 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-black);
+  width: 1780px;
+  height: 187px;
+}
+.footer27 {
+  position: absolute;
+  top: 54px;
+  left: 509px;
+  font-size: var(--font-size-5xl);
+  display: inline-block;
+  color: var(--color-black);
+  width: 76px;
+  height: 27px;
+}
+.hfg-1-113 {
+  position: absolute;
+  top: 18px;
+  left: 84px;
+  width: 257px;
+  height: 142.3px;
+  object-fit: cover;
+}
+.website-cho-thu13 {
+  margin: 0;
+}
+.uy-tn-ngoi13 {
+  margin: 0;
+  white-space: pre-wrap;
+}
+.nim-tin-ca13,
+.website-cho-thu-container13 {
+  position: absolute;
+  top: 93px;
+  left: 378px;
+  display: inline-block;
+  width: 338px;
+}
+.nim-tin-ca13 {
+  top: 43px;
+}
+.mask-1-icon13 {
+  position: absolute;
+  top: 66px;
+  left: 1350px;
+  width: 249px;
+  height: 66px;
+  object-fit: cover;
+}
+.chat-vi-chng13 {
+  position: absolute;
+  top: 90px;
+  left: 1425px;
+  display: inline-block;
+  width: 151px;
+  height: 15.8px;
+}
+.h-tr-khch13,
+.sn-phm13,
+.thng-tin14 {
+  position: absolute;
+  top: 26px;
+  left: 1348px;
+  font-size: var(--font-size-xl);
+}
+.sn-phm13,
+.thng-tin14 {
+  left: 1068px;
+}
+.thng-tin14 {
+  left: 773px;
+}
+.ti-khon-lin26 {
+  position: absolute;
+  top: 57px;
+  left: 1074px;
+}
+.ti-khon-teamfight13,
+.ti-khon-valorant13 {
+  position: absolute;
+  top: 81px;
+  left: 1074px;
+}
+.ti-khon-valorant13 {
+  top: 106px;
+}
+.chnh-sch-bo26,
+.chnh-sch-bo27,
+.hng-dn-np13 {
+  position: absolute;
+  top: 57px;
+  left: 780px;
+}
+.chnh-sch-bo27,
+.hng-dn-np13 {
+  top: 81px;
+}
+.hng-dn-np13 {
+  top: 105px;
+}
+.footer26,
+.ti-khon-lin27 {
+  position: absolute;
+  top: 130px;
+  left: 1074px;
+}
+.footer26 {
+  top: 3197px;
+  left: -4px;
+  width: 1780px;
+  height: 187px;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+}
+.lin-minh-huyn4,
+.lmht-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.lmht-child {
+  background-color: var(--color-whitesmoke-200);
+  width: 1415px;
+  height: 431px;
+}
+.lin-minh-huyn4 {
+  display: inline-block;
+  width: 315.3px;
+  height: 28.3px;
+}
+.group-child103 {
+  position: absolute;
+  top: 33.2px;
+  left: 0;
+  border-top: 5px solid var(--color-red-500);
+  box-sizing: border-box;
+  width: 398px;
+  height: 5px;
+}
+.lin-minh-huyn-thoi-parent,
+.phn-chia-gi1,
+.yone-1-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 393px;
+  height: 33.2px;
+}
+.phn-chia-gi1,
+.yone-1-parent {
+  top: 18px;
+  left: 26px;
+  height: 378px;
+}
+.phn-chia-gi1 {
+  top: 57px;
+  left: 298px;
+  width: 1081px;
+  height: 347px;
+  font-size: var(--font-size-base);
+  color: var(--color-red-200);
+}
+.lmht {
+  position: absolute;
+  top: 823px;
+  left: 179px;
+  width: 1415px;
+  height: 431px;
+}
+.teamfight-tactics {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 271.6px;
+  height: 28.3px;
+}
+.teamfighttactics-tft-apac-laun-icon {
+  position: absolute;
+  top: 38.6px;
+  left: 0;
+  width: 246px;
+  height: 328px;
+  object-fit: cover;
+}
+.phn-chia-gi2,
+.tft1 {
+  position: absolute;
+  top: 21px;
+  left: 26px;
+  width: 393px;
+  height: 366.6px;
+}
+.phn-chia-gi2 {
+  top: 60px;
+  left: 298px;
+  width: 1081px;
+  height: 347px;
+  font-size: var(--font-size-base);
+  color: var(--color-red-200);
+}
+.tft {
+  position: absolute;
+  top: 1284px;
+  left: 179px;
+  width: 1415px;
+  height: 431px;
+}
+.r-1-1,
+.valorant6 {
+  position: absolute;
+  left: 0;
+}
+.r-1-1 {
+  top: 38.9px;
+  width: 246px;
+  height: 338px;
+  object-fit: cover;
+}
+.valorant6 {
+  top: 0;
+  display: inline-block;
+  width: 141.7px;
+  height: 28.3px;
+}
+.phn-chia-gi3,
+.valorant5 {
+  position: absolute;
+  top: 21px;
+  left: 25px;
+  width: 393px;
+  height: 376.9px;
+}
+.phn-chia-gi3 {
+  top: 60px;
+  left: 297px;
+  width: 1081px;
+  height: 347px;
+  font-size: var(--font-size-base);
+  color: var(--color-red-200);
+}
+.banasdasdner-1-icon,
+.valorant4 {
+  position: absolute;
+  top: 1745px;
+  left: 180px;
+  width: 1415px;
+  height: 431px;
+}
+.banasdasdner-1-icon {
+  top: 0;
+  left: 0;
+  height: 468px;
+  object-fit: cover;
+}
+.group-child115 {
+  position: absolute;
+  top: 0;
+  left: 706px;
+  border-right: 5px solid var(--color-white);
+  box-sizing: border-box;
+  width: 5px;
+  height: 473px;
+}
+.banasdasdner-1-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1415px;
+  height: 468px;
+}
+.thu-game-child,
+.thu-ti-khon {
+  position: absolute;
+  top: 0;
+  left: 35px;
+}
+.thu-game-child {
+  top: 49px;
+  left: 0;
+  border-top: 5px solid var(--color-red-500);
+  box-sizing: border-box;
+  width: 398px;
+  height: 5px;
+}
+.thu-game {
+  position: absolute;
+  top: 197px;
+  left: 157px;
+  width: 393px;
+  height: 49px;
+  cursor: pointer;
+}
+.thu-ng-chi,
+.tm-ngi-chi {
+  position: absolute;
+  top: 0;
+  left: 38px;
+}
+.thu-ng-chi {
+  top: 197px;
+  left: 862px;
+  width: 393px;
+  height: 49px;
+}
+.khung-thu-ti-khon-ng-chi {
+  position: absolute;
+  top: 2667px;
+  left: 180px;
+  width: 1415px;
+  height: 468px;
+  font-size: var(--font-size-19xl);
+  color: var(--color-white);
+}
+.group-child116 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-black);
+  width: 1772px;
+  height: 151.2px;
+}
+.hfg-3-113 {
+  position: absolute;
+  top: 12px;
+  left: 242px;
+  width: 140px;
+  height: 128.2px;
+  object-fit: cover;
+}
+.group-child117,
+.rectangle-parent75 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1772px;
+  height: 151.2px;
+}
+.group-child117 {
+  border-radius: var(--br-9xl);
+  background-color: var(--color-white);
+  width: 709px;
+  height: 42px;
+}
+.search-1-icon13 {
+  position: absolute;
+  top: 6px;
+  left: 660px;
+  width: 31px;
+  height: 31px;
+  object-fit: cover;
+}
+.rectangle-parent76 {
+  position: absolute;
+  top: 22px;
+  left: 531px;
+  width: 709px;
+  height: 42px;
+}
+.hng-dn13,
+.trang-ch14 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hng-dn13 {
+  left: 185px;
+}
+.mini-game13,
+.np-tin13,
+.tin-tc13 {
+  position: absolute;
+  top: 0;
+  left: 382px;
+}
+.mini-game13,
+.tin-tc13 {
+  left: 735px;
+}
+.mini-game13 {
+  left: 547px;
+}
+.trang-ch-parent11 {
+  position: absolute;
+  top: 96px;
+  left: 476px;
+  width: 819px;
+  height: 29px;
+  font-size: var(--font-size-5xl);
+}
+.group-child118 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  width: 105px;
+  height: 28px;
+}
+.ng-nhp13 {
+  position: absolute;
+  top: 6px;
+  left: 16px;
+}
+.group-child119,
+.rectangle-parent77 {
+  position: absolute;
+  width: 105px;
+  height: 28px;
+}
+.rectangle-parent77 {
+  top: 29px;
+  left: 1355px;
+  cursor: pointer;
+  color: var(--color-red-300);
+}
+.group-child119 {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-red-200);
+}
+.ng-k16 {
+  position: absolute;
+  top: 6px;
+  left: 23px;
+}
+.rectangle-parent78 {
+  position: absolute;
+  top: 29px;
+  left: 1488px;
+  width: 105px;
+  height: 28px;
+  cursor: pointer;
+}
+.header13 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1772px;
+  height: 151.2px;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+}
+.trang-ch13 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 3384px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

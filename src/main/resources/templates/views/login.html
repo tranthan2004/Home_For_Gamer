@@ -48,6 +48,7 @@
         </div>
       </div>
     </div>
+    
     <section class="image-3-parent">
       <img class="image-3-icon" loading="lazy" alt="" src="/image/image-3@2x.png" />
 
@@ -68,10 +69,8 @@
               <input class="ti-khon" name="pass" placeholder="Mật khẩu*" type="text" />
             </div>
           </div>
-
-		
+                        <div th:text="${mes}"></div>
         </div>
-        
         <div class="frame-parent">
           <button class="rectangle-parent5" th:formaction="@{/index/login}">
             <div class="frame-child6"></div>
@@ -87,7 +86,6 @@
         </div>
       </form>
     </section>
-    <h1>[[${message}]]</h1>
     <footer class="footer">
       <div class="footer-child"></div>
       <div class="footer-content">

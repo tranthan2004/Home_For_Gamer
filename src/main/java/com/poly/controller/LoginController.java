@@ -22,29 +22,26 @@ public class LoginController {
 		return "/views/login";
 	}
 	@RequestMapping(value="/index/login",method = RequestMethod.POST)
-	public String login(Model model,@RequestParam("user")Optional<String> user,@RequestParam("pass")Optional<String> pass) {
-		String u = user.orElse(null);
+	public String login(Model model,@RequestParam("user")Optional<String> username,@RequestParam("pass")Optional<String> pass) {
+		String u = username.orElse(null);
 		String p = pass.orElse("");
-		UserAccount us = dao.findById(u).get();
-		if(us!=null) {
-			if (us.getPassword().equals(pass)) {
-				model.addAttribute("message","Login Success!");
-				return "redirect:/index/login";
+		Optional<UserAccount> us = dao.findById(u);
+		UserAccount user = us.orElse(null);
+		if(user!=null) {
+			if (user.getPassword().equals(p)) {
+				return "redirect:/index";
 			} else {
-				model.addAttribute("message", "Incorrect Password!");
-				return "redirect:/index/login";
+				model.addAttribute("mes", "Incorrect Password!");
+				return "/views/login";
 			}		
 		} else {
-			model.addAttribute("message", "User Invalid!");
-//			return "redirect:/index/login";
+			model.addAttribute("mes", "User Invalid!");
 		}
-		
-		model.addAttribute("message", "Thanh cong!");
 		return "/views/login";
 	}
 	@RequestMapping(value="/index/signup", method=RequestMethod.GET)
 	public String signup() {
 		return "/views/signup";
 	}
-	
+
 }

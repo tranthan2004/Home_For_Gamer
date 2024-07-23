@@ -1,0 +1,355 @@
+.gi-1235 {
+  position: absolute;
+  top: 232px;
+  left: 754px;
+  font-size: 64px;
+  color: var(--color-tomato-200);
+}
+.line-div {
+  position: absolute;
+  top: 10.5px;
+  left: -2.5px;
+  border-top: 5px solid var(--color-black);
+  box-sizing: border-box;
+  width: 1157px;
+  height: 5px;
+}
+.polygon-icon {
+  position: absolute;
+  top: 0;
+  left: 555px;
+  width: 41px;
+  height: 41px;
+  object-fit: contain;
+}
+.line-group,
+.line-parent {
+  position: absolute;
+  top: 378px;
+  left: 310px;
+  width: 1152px;
+  height: 41px;
+}
+.line-group {
+  top: 510px;
+}
+.chi-tit-nick-game-child {
+  position: absolute;
+  top: 240px;
+  left: 1253px;
+  background-color: var(--color-tomato-200);
+  width: 209px;
+  height: 61px;
+}
+.vng-ii {
+  color: var(--color-red-200);
+}
+.rank-lh-vng-container {
+  position: absolute;
+  top: 445px;
+  left: 334px;
+}
+.m-ti-khon-container {
+  position: absolute;
+  top: 309px;
+  left: 310px;
+}
+.khung-bilgewater,
+.tng-558 {
+  position: absolute;
+  top: 445px;
+  left: 603px;
+}
+.tng-558 {
+  left: 855px;
+}
+.thanh-ton,
+.trang-phc-274-container {
+  position: absolute;
+  top: 445px;
+  left: 1051px;
+}
+.thanh-ton {
+  top: 258px;
+  left: 1290px;
+  color: var(--color-white);
+}
+.thit-k-cha-c-tn-1,
+.trangphuc-1-icon,
+.tuong-1-icon {
+  position: absolute;
+  top: 1816px;
+  left: 372px;
+  width: 1028px;
+  height: 578px;
+  object-fit: cover;
+}
+.thit-k-cha-c-tn-1,
+.trangphuc-1-icon {
+  top: 574px;
+  height: 568px;
+}
+.trangphuc-1-icon {
+  top: 1194px;
+  left: 373px;
+  width: 1025px;
+  height: 570px;
+}
+.footer-child8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-black);
+  width: 1780px;
+  height: 187px;
+}
+.footer21 {
+  position: absolute;
+  top: 54px;
+  left: 509px;
+  font-size: var(--font-size-5xl);
+  display: inline-block;
+  color: var(--color-black);
+  width: 76px;
+  height: 27px;
+}
+.hfg-1-110 {
+  position: absolute;
+  top: 18px;
+  left: 84px;
+  width: 257px;
+  height: 142.3px;
+  object-fit: cover;
+}
+.website-cho-thu10 {
+  margin: 0;
+}
+.uy-tn-ngoi10 {
+  margin: 0;
+  white-space: pre-wrap;
+}
+.nim-tin-ca10,
+.website-cho-thu-container10 {
+  position: absolute;
+  top: 93px;
+  left: 378px;
+  display: inline-block;
+  width: 338px;
+}
+.nim-tin-ca10 {
+  top: 43px;
+}
+.mask-1-icon10 {
+  position: absolute;
+  top: 66px;
+  left: 1350px;
+  width: 249px;
+  height: 66px;
+  object-fit: cover;
+}
+.chat-vi-chng10 {
+  position: absolute;
+  top: 90px;
+  left: 1425px;
+  display: inline-block;
+  width: 151px;
+  height: 15.8px;
+}
+.h-tr-khch10,
+.sn-phm10,
+.thng-tin11 {
+  position: absolute;
+  top: 26px;
+  left: 1348px;
+  font-size: var(--font-size-xl);
+}
+.sn-phm10,
+.thng-tin11 {
+  left: 1068px;
+}
+.thng-tin11 {
+  left: 773px;
+}
+.ti-khon-lin20 {
+  position: absolute;
+  top: 57px;
+  left: 1074px;
+}
+.ti-khon-teamfight10,
+.ti-khon-valorant10 {
+  position: absolute;
+  top: 81px;
+  left: 1074px;
+}
+.ti-khon-valorant10 {
+  top: 106px;
+}
+.chnh-sch-bo20,
+.chnh-sch-bo21,
+.hng-dn-np10 {
+  position: absolute;
+  top: 57px;
+  left: 780px;
+}
+.chnh-sch-bo21,
+.hng-dn-np10 {
+  top: 81px;
+}
+.hng-dn-np10 {
+  top: 105px;
+}
+.footer20,
+.ti-khon-lin21 {
+  position: absolute;
+  top: 130px;
+  left: 1074px;
+}
+.footer20 {
+  top: 2504px;
+  left: 0;
+  width: 1780px;
+  height: 187px;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+}
+.group-child74 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-black);
+  width: 1772px;
+  height: 151.2px;
+}
+.hfg-3-110 {
+  position: absolute;
+  top: 12px;
+  left: 242px;
+  width: 140px;
+  height: 128.2px;
+  object-fit: cover;
+}
+.group-child75,
+.rectangle-parent59 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1772px;
+  height: 151.2px;
+}
+.group-child75 {
+  border-radius: var(--br-9xl);
+  background-color: var(--color-white);
+  width: 709px;
+  height: 42px;
+}
+.search-1-icon10 {
+  position: absolute;
+  top: 6px;
+  left: 660px;
+  width: 31px;
+  height: 31px;
+  object-fit: cover;
+}
+.rectangle-parent60 {
+  position: absolute;
+  top: 22px;
+  left: 531px;
+  width: 709px;
+  height: 42px;
+}
+.hng-dn10,
+.trang-ch10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hng-dn10 {
+  left: 185px;
+}
+.mini-game10,
+.np-tin10,
+.tin-tc10 {
+  position: absolute;
+  top: 0;
+  left: 382px;
+}
+.mini-game10,
+.tin-tc10 {
+  left: 735px;
+}
+.mini-game10 {
+  left: 547px;
+}
+.trang-ch-parent8 {
+  position: absolute;
+  top: 96px;
+  left: 476px;
+  width: 819px;
+  height: 29px;
+  font-size: var(--font-size-5xl);
+}
+.group-child76 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  width: 105px;
+  height: 28px;
+}
+.ng-nhp10 {
+  position: absolute;
+  top: 6px;
+  left: 16px;
+}
+.group-child77,
+.rectangle-parent61 {
+  position: absolute;
+  width: 105px;
+  height: 28px;
+}
+.rectangle-parent61 {
+  top: 29px;
+  left: 1355px;
+  cursor: pointer;
+  color: var(--color-red-300);
+}
+.group-child77 {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-red-200);
+}
+.ng-k13 {
+  position: absolute;
+  top: 6px;
+  left: 23px;
+}
+.rectangle-parent62 {
+  position: absolute;
+  top: 29px;
+  left: 1488px;
+  width: 105px;
+  height: 28px;
+  cursor: pointer;
+}
+.header10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1772px;
+  height: 151.2px;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+}
+.chi-tit-nick-game {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 2691px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
