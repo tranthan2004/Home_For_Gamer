@@ -6,7 +6,6 @@ import java.util.Optional;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
@@ -24,11 +23,11 @@ public class UserAccount implements Serializable {
     @Column(name = "password")
     private String password;
     
-    @Column(name = "lessor")
-    private boolean Lessor;
+    @Column(name = "Admin")
+    private boolean admin;
     
-    @Column(name = "sell")
-    private boolean Sell;
+    @Column(name="Seller")
+    private boolean seller;
     
     @OneToOne(mappedBy = "UserAcc")
     UserInformation users;

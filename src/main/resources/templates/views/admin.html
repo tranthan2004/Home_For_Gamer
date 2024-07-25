@@ -10,9 +10,9 @@
 </head>
 <body>
 	    <section class="image-3-parent">
-      <img class="image-3-icon" loading="lazy" alt="" src="/image/image-3@2x.png" style="height:500px"/>
+      <img class="image-3-icon" loading="lazy" alt="" src="/image/image-3@2x.png" style="height:600px"/>
 
-      <form class="form-ng-k" method="post">
+      <form class="form-ng-k" method="post" th:object="${user}">
         <div class="form-ng-k-child"></div>
         <div class="ng-k-wrapper">
           <h1 class="ng-k2">ADMIN - CONTROL</h1>
@@ -21,21 +21,24 @@
           <div class="account-input">
           <label class="usn">Username</label>
             <div class="group-div">
-              <input class="ti-khon" name="user" placeholder="Username*" type="text" />
+              <input class="ti-khon" name="user" th:field="*{Username}" placeholder="Username*" type="text" />
             </div>
             <label class="usn">Password</label>
             <div class="group-div">
-              <input class="ti-khon" name="pass" placeholder="Password*" type="text" />
+              <input class="ti-khon" name="pass" th:field="*{password}" placeholder="Password*" type="text" />
             </div>
 			<div>
-            	<input type="radio" value="true" name="role"> <label class="usn">Seller</label>
-            	<input type="radio" value="false" name="role"> <label class="usn">User</label>
+            	<input type="checkbox" value="true" th:field="*{admin}" name="role"> <label class="usn">Admin</label>
+            	<br>
+            	<input type="radio" value="false" th:field="*{seller}" name="role"> <label class="usn">Seller</label>
+            	<input type="radio" value="false" th:field="*{seller}" name="role"> <label class="usn">User</label>
             </div>
           </div>
+          <div class="text-light">[[${mes}]]</div>
           <div>
-          	<button class="btn btn-outline-info">Create</button>
-          	<button class="btn btn-outline-info">Update</button>
-          	<button class="btn btn-outline-info">Delete</button>
+          	<button class="btn btn-outline-info" th:formaction="@{|/index/admin/create|}">Create</button>
+          	<button class="btn btn-outline-info" th:formaction="@{|/index/admin/update/*{Username}|}">Update</button>
+          	<button class="btn btn-outline-info" th:formaction="@{|/index/admin/delete|}">Delete</button>
           	<button class="btn btn-outline-info">Reset</button>
           </div>
         </div>       
@@ -46,21 +49,20 @@
     	<tr>
     		<th>Username</th>
     		<th>Password</th>
-    		<th>Role</th>
+    		<th>Admin</th>
+    		<th>Seller</th>
     		<th>
     	</tr>
-    	<tr>
-    		<td>1</td>
-    		<td>1</td>
-    		<td>1</td>
-    		<td>1</td>
+    	<tr th:each="entry:${list}" th:object="${entry}">
+    		<td>[[*{Username}]]</td>
+    		<td>[[*{password}]]</td>
+    		<td>[[*{admin}]]</td>
+    		<td>[[*{seller}]]</td>
+    		<td>
+    			<a th:href="@{|/index/admin/edit/${entry.Username}|}">Edit</a>
+    		</td>
     	</tr>
-    	<tr>
-    		<td>1</td>
-    		<td>1</td>
-    		<td>1</td>
-    		<td>1</td>
-    	</tr>
+
     </table></div>
 </body>
 </html>

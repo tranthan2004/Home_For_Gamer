@@ -39,9 +39,5 @@ public class LoginController {
 		}
 		return "/views/login";
 	}
-	@RequestMapping(value="/index/signup", method=RequestMethod.GET)
-	public String signup() {
-		return "/views/signup";
-	}
 
 }

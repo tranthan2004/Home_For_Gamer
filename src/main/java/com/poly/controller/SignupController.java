@@ -24,12 +24,12 @@ public class SignupController {
 	
 	List<UserAccount> account;
 	
-	@RequestMapping(value = "/signup", method = RequestMethod.GET)
+	@RequestMapping(value = "/index/signup", method = RequestMethod.GET)
 	public String show() {
 		return "/views/signup";
 	}
 
-	@RequestMapping(value = "/signup", method = RequestMethod.POST)
+	@RequestMapping(value = "/index/signup", method = RequestMethod.POST)
 	public String create(Model model, @RequestParam("user") String username, @RequestParam("pass") String pw,
 			@RequestParam("passconfirm") String pwconfirm) {
 		if (username.isBlank()||pw.isBlank()||pwconfirm.isBlank()) {
@@ -47,8 +47,8 @@ public class SignupController {
 					UserAccount a = new UserAccount();
 					a.setUsername(username);
 					a.setPassword(pw);
-					a.setLessor(false);
-					a.setSell(true);
+					a.setAdmin(false);
+					a.setSeller(true);
 					UserDao.save(a);
 					model.addAttribute("mes", "Đăng kí thành công!");
 				}
