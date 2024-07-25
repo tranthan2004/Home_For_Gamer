@@ -51,10 +51,10 @@
     <section class="image-3-parent">
       <img class="image-3-icon" loading="lazy" alt="" src="/image/image-3@2x.png" />
 
-      <form class="form-ng-k">
+      <form class="form-ng-k" method="post">
         <div class="form-ng-k-child"></div>
         <div class="ng-k-wrapper">
-          <h1 class="ng-k2">Đăng ký</h1>
+          <b class="ng-k3">Đăng ký</b>
         </div>
         <div class="input-fields">
           <div class="account-input">
@@ -62,26 +62,21 @@
               <b class="bt-buc">*Bắt buộc</b>
             </div>
             <div class="group-div">
-              <input class="ti-khon" placeholder="Tài khoản*" type="text" />
+              <input class="ti-khon" placeholder="Tài khoản*" type="text" name="user" />
             </div>
             <div class="group-div">
-              <input class="ti-khon" placeholder="Mật khẩu*" type="text" />
+              <input class="ti-khon" placeholder="Mật khẩu*" type="text" name="pass" />
             </div>
             <div class="group-div">
-              <input class="ti-khon" placeholder="Nhập lại mật khẩu*" type="text" />
-            </div>
-            <div class="rectangle-parent3">
-              <input class="email" placeholder="Email*" type="text" />
-            </div>
-            <div class="rectangle-parent4">
-              <input class="s-in-thoi" placeholder="Số điện thoại*" type="text" />
+              <input class="ti-khon" placeholder="Nhập lại mật khẩu*" type="text" name="passconfirm" />
             </div>
           </div>
 
 
         </div>
         <div class="frame-parent">
-          <button class="rectangle-parent5">
+        <div th:text="${mes}"></div>
+          <button th:formaction="@{/signup}" class="rectangle-parent5">
             <div class="frame-child6"></div>
             <b class="ng-k3">Đăng ký</b>
           </button>
