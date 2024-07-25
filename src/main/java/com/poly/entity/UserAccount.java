@@ -23,7 +23,7 @@ public class UserAccount implements Serializable {
     
     @Column(name = "password")
     private String password;
-    // xoá
+    
     @Column(name = "lessor")
     private boolean Lessor;
     
