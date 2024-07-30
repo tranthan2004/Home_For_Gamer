@@ -12,11 +12,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.poly.dao.UserAccountDao;
 import com.poly.entity.UserAccount;
 
+import jakarta.servlet.http.HttpSession;
+
 
 @Controller
 public class LoginController {
 	@Autowired
 	UserAccountDao dao;
+	@Autowired
+	HttpSession ses;
+	
 	@RequestMapping(value="/index/login")
 	public String loginindex(Model model) {
 		return "/views/login";
@@ -29,6 +34,7 @@ public class LoginController {
 		UserAccount user = us.orElse(null);
 		if(user!=null) {
 			if (user.getPassword().equals(p)) {
+				ses.setAttribute("user", user);
 				return "redirect:/index";
 			} else {
 				model.addAttribute("mes", "Incorrect Password!");

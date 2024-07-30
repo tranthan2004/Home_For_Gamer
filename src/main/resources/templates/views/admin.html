@@ -21,7 +21,7 @@
           <div class="account-input">
           <label class="usn">Username</label>
             <div class="group-div">
-              <input class="ti-khon" name="user" th:field="*{Username}" placeholder="Username*" type="text" />
+              <input class="ti-khon" name="user" th:field="*{Username}" placeholder="Username*" type="text"/>
             </div>
             <label class="usn">Password</label>
             <div class="group-div">
@@ -30,7 +30,7 @@
 			<div>
             	<input type="checkbox" value="true" th:field="*{admin}" name="role"> <label class="usn">Admin</label>
             	<br>
-            	<input type="radio" value="false" th:field="*{seller}" name="role"> <label class="usn">Seller</label>
+            	<input type="radio" value="true" th:field="*{seller}" name="role"> <label class="usn">Seller</label>
             	<input type="radio" value="false" th:field="*{seller}" name="role"> <label class="usn">User</label>
             </div>
           </div>

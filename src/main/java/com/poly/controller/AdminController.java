@@ -60,7 +60,7 @@ public class AdminController {
 			userAccDao.save(user);
 		} else {
 			model.addAttribute("mes", "Username không tồn tại");
-			return "forward:/index/admin";
+			return "/views/admin";
 		}
 		return "redirect:/index/admin";
 	}
