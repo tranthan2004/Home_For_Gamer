@@ -8,6 +8,12 @@
 </head>
 
 <body>
+	 
+    <input id="ngNhan" value="ErmnLp4YsZPk1hHW6RaPeDbaRKVT5WCHsTDEHvgBZkDS" type="hidden" />            
+      <td style="width: 400px;">
+                <p id="key"></p>
+            </td>           
+           
     <div class="v250_457">
         <div class="v273_6"></div>
         <div class="v253_531">
@@ -17,20 +23,47 @@
             <div class="v253_528"></div>
             <div class="v253_529"></div>
             <div class="v253_530"></div>
-            <div class="v253_527">
-                <div class="v253_523"><span class="v253_512">RANK ĐƠN:</span><span class="v253_513">VÀNG IV</span></div>
-                <div class="v253_534"><span class="v253_514">KHUNG:</span><span class="v253_515">BẠCH KIM</span></div>
-                <div class="v253_535"><span class="v253_516">TƯỚNG:</span><span class="v253_517">123</span></div>
-                <div class="v253_537"><span class="v253_518">TRANG PHỤC:</span><span class="v253_519">1233</span></div>
-                <div class="v253_536"><span class="v253_520">GIÁ TIỀN:</span><span class="v253_521">123</span></div>
-                <span class="v253_533">TỔNG THANH TOÁN:</span><span class="v253_538">123</span>
-            </div>
-        </div>
+			<div class="v253_527" >
+				<div class="v253_523">
+					<span class="v253_512">RANK ĐƠN:</span> <span class="v253_513"
+						>VÀNG IV</span>
+				</div>
+				<div class="v253_534">
+					<span class="v253_514">KHUNG:</span> <span class="v253_515"
+						>BẠCH KIM</span>
+				</div>
+				<div class="v253_535">
+					<span class="v253_516">TƯỚNG:</span> <span class="v253_517"
+						>123</span>
+				</div>
+				<div class="v253_537">
+					<span class="v253_518">TRANG PHỤC:</span> <span class="v253_519"
+						>1233</span>
+				</div>
+				<div class="v253_536">
+					<span class="v253_520">GIÁ TIỀN:</span> <span class="v253_521"><input
+						id="vnd" class="v253_519" th:value="${acc.price}"  th:text="${acc.price}" /></span>
+				</div>
+				<span class="v253_533">TỔNG THANH TOÁN:</span> <span
+					class="v253_538" >123</span>
+			</div>
+
+		</div>
         <div class="v253_542">
             <div class="name"></div>
             <div class="name"></div>
         </div>
-        <div class="v253_546"></div><span class="v253_547">THANH TOÁN</span>
+        <div class="v253_546"></div>
+        <button id="giaoDich" class="v253_547" 
+        style="background-color:rgba(71, 197, 76, 1); 
+               width:400px; 
+               border: 0; 
+               cursor: pointer; 
+               color: white;"
+        onmouseover="this.style.color='black'" 
+        onmouseout="this.style.color='white'">
+    THANH TOÁN
+</button>
         <div class="v273_13">
             <div class="v273_10"></div><span class="v273_12">CHÚ Ý:
                 Mua xong các bạn phải thêm số điện thoại và mail vào ngay lập tức.
@@ -71,6 +104,187 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/base-58@0.0.1/Base58.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/@solana/web3.js@1.41.0/lib/index.iife.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bs58/4.0.1/bs58.min.js"></script>
+    <script>
+    (async () => {
+        await window.phantom.solana.connect();
+        publicKey = window.phantom.solana.publicKey.toBase58(); // [1,1,1,1]
+        console.log(publicKey);
+    })();
+    
+    async function getProvider() {
+        if ("solana" in window) {
+            const provider = window.solana;
+            if (provider.isPhantom) {
+                console.log("Is Phantom installed?  ", provider.isPhantom);
+                document.getElementById("pro").innerHTML = "Phantom Wallet is installed";
+                return provider;
+            }
+        } else {
+            document.write('Install https://www.phantom.app/');
+        }
+    }
+
+    async function connectToWallet() {
+        const { solana } = window;
+        if (solana) {
+            const response = await solana.connect();
+            publicKey = response.publicKey.toString();
+            console.log('Address:', publicKey);
+            document.getElementById("key").innerHTML = publicKey;
+            return true;
+        }
+        return false;
+    }
+
+    async function transferSOL() {
+        const {
+            Connection,
+            Transaction,
+            SystemProgram,
+            PublicKey
+        } = solanaWeb3;
+
+        if (!window.solana || !window.solana.isPhantom) {
+            alert("Chưa kết nối ví");
+            return;
+        }
+
+        try {
+            // Lấy provider Phantom wallet
+            const provider = window.solana;
+
+            //Lấy public key của ví
+            const fromPublicKey = provider.publicKey;
+            if (!fromPublicKey) {
+                alert("Vui lòng kết nối ví Phantom trước khi thực hiện giao dịch.");
+                return;
+            }
+            // Kết nối với mạng Devnet Solana
+            const connection = new Connection("https://api.devnet.solana.com", "confirmed");
+
+            // Số lamports cần gửi
+            var lamportsToSend = document.getElementById('vnd').value;
+
+            const lambordsVnd = await convertVND(lamportsToSend);
+
+
+            const toPublicKey = document.getElementById('ngNhan').value;
+
+
+            // Tạo giao dịch truyền tiền
+            const transaction = new Transaction().add(
+                SystemProgram.transfer({
+                    fromPubkey: fromPublicKey,
+                    toPubkey: new PublicKey(toPublicKey),
+                    lamports: lambordsVnd,
+                })
+            );
+
+            // Gán recentBlockhash và feePayer
+            transaction.recentBlockhash = (await connection.getRecentBlockhash()).blockhash;
+            transaction.feePayer = fromPublicKey;
+
+            // Ký giao dịch với Phantom wallet
+            const { signature } = await provider.signAndSendTransaction(transaction);
+
+            // Xác nhận giao dịch
+            await connection.confirmTransaction(signature, 'confirmed');
+
+            // const encodedMessage = new TextEncoder().encode("Message to sign");
+            // const signedMessage = await window.solana.request({
+            //     method: "signMessage",
+            //     params: {
+            //         message: encodedMessage,
+            //         display: "utf8",
+            //     },
+            // });
+            // console.log("Message đã ký:", signedMessage);
+
+            console.log("Giao dịch thành công! Signature:", signature);
+
+            const getBalanceCurrent = await getBalance();
+			
+           
+            
+            alert(`Bạn đã giao dịch thành công: ${lambordsVnd} và số dư của bạn còn lại: ${getBalanceCurrent}`);
+        } catch (error) {
+            if (error.message == "User rejected the request.") {
+                alert("Bạn đã hủy thanh toán")
+
+            } else {
+                alert("Lỗi xảy ra")
+                console.error("Lỗi:", error);
+            }
+
+        }
+    }
+
+    async function getBalance() {
+        const {
+            Connection,
+            PublicKey,
+            LAMPORTS_PER_SOL,
+        } = solanaWeb3;
+
+        await connectToWallet();
+
+        const solana = window.solana;
+
+        if (!window.solana || !window.solana.isPhantom) {
+            alert("Chưa kết nối ví");
+            return;
+        }
+
+        try {
+
+            const connection = new Connection("https://api.devnet.solana.com", "confirmed");
+
+            // const publicKeyString = document.getElementById("key").innerHTML;
+            const publicKey = new PublicKey(solana.publicKey);
+            const balance = await connection.getBalance(publicKey);
+            const balanceSOl = balance / LAMPORTS_PER_SOL;
+            return balanceSOl;
+        } catch (error) {
+            console.error("Lỗi:", error);
+        }
+    }
+
+    async function convertVND(lamportsToSend) {
+        const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=vnd');
+        const data = await response.json();
+        const exchangeRate = data.solana.vnd;
+
+        // Tính số SOL cần chuyển
+        const amountSOL = lamportsToSend / exchangeRate;
+        const lambordsVnd = Math.floor(amountSOL * Math.pow(10, 9));
+        return lambordsVnd;
+
+    }
+
+
+
+    document.getElementById("giaoDich").addEventListener("click", transferSOL);
+    document.getElementById("getProvider").addEventListener("click", getProvider);
+    document.getElementById("connectToWallet").addEventListener("click", connectToWallet);
+    document.getElementById("getBalance").addEventListener("click", async function () {
+        try {
+            const key = document.getElementById('key');
+            if (key == null || key.innerText.trim() === "") {
+                alert("Vui lòng kết nối ví trước khi lấy số dư.");
+                return;
+            }
+
+            const getBalanceCurrent = await getBalance();
+            alert(`Số dư của bạn hiện tại: ${getBalanceCurrent}`);
+        } catch (error) {
+            console.error('Đã xảy ra lỗi khi lấy số dư:', error);
+        }
+    });
+
+</script>
 </body>
 
 </html>

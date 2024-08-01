@@ -13,12 +13,12 @@
   </head>
   <body>
     <div class="nick-game">
-      <div class="rectangle-parent7">
+      <div class="rectangle-parent7" th:each="acc : ${tradeAcc}">
         <div class="group-child7"></div>
         <img
           class="x2160-project-riven-lol-league-icon"
           alt=""
-          src="/image/3840x2160projectrivenlolleagueoflegendslol-1574103103-1@2x.png"
+          th:src="@{'/image/' + ${acc.image}}"
         />
 
         <b class="rank-n-vng-container">
@@ -27,10 +27,11 @@
           <p class="rank-n-vng">Tướng: 167</p>
           <p class="rank-n-vng">Trang Phục: 1639</p>
         </b>
-        <b class="gi-123">GIÁ : 123</b>
+        <b class="gi-123" th:text="${acc.price}">Giá:</b>
         <div class="xem-chi-tit">
           <div class="xem-chi-tit-child"></div>
-          <b class="xem-chi-tit1">Xem chi tiết</b>
+          <a th:href="@{/DetailAccount/{id}(id=${acc.nameaccount})}" class="xem-chi-tit1" style="text-decoration: none; color:white">Xem chi tiết</a>
+
         </div>
       </div>
       <div class="footer2">

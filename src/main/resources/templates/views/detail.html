@@ -13,7 +13,10 @@
   </head>
   <body>
     <div class="chi-tit-nick-game">
-      <b class="gi-1235">GIÁ: 123</b>
+    <div>
+    <b class="gi-1235" th:text="${acc.price}" >Giá </b>
+    </div>
+      
       <div class="line-parent">
         <div class="line-div"></div>
         <img class="polygon-icon" alt="" src="/image/polygon-1.svg" />
@@ -43,16 +46,16 @@
         <span>TRANG PHỤC: </span>
         <span class="vng-ii">274</span>
       </b>
-      <b class="thanh-ton">THANH TOÁN</b>
-      <img class="tuong-1-icon" alt="" src="/image/tuong-1@2x.png" />
+     <a th:href="@{/pay/{id}(id=${acc.nameaccount})}" class="thanh-ton" style="text-decoration: none; color:white">Thanh Toán</a>
+      <img class="tuong-1-icon" alt="" th:src="@{/image/{image}(image=${acc.image1})}"/>
 
       <img
         class="thit-k-cha-c-tn-1"
         alt=""
-        src="/image/thit-k-cha-c-tn-1@2x.png"
+        th:src="@{/image/{image}(image=${acc.image3})}"
       />
 
-      <img class="trangphuc-1-icon" alt="" src="/image/trangphuc-1@2x.png" />
+      <img class="trangphuc-1-icon" alt="" th:src="@{/image/{image}(image=${acc.image2})}" />
 
       <div class="footer20">
         <div class="footer-child8"></div>

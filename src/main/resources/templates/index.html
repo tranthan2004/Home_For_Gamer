@@ -8,9 +8,10 @@
     <h1>ConnectToWallet</h1>
     <table border="1">
         <caption>
-            <div>
+            <div th:each="acc : ${tradeAcc}">
                 <label>Số tiền: </label>
-                <input id="vnd" value="100000" />
+                <input id="vnd" th:value="${acc.price}" th:text="${acc.price}" />
+                <img th:src="@{'/image/' + ${acc.image}}" alt="Car Image" style="width: 100px; height: auto;">
                 <label>VND</label>
             </div>
             <div>
