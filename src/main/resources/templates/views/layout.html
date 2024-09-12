@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="dynamic(view)">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="/views/css/global.css" />
+<link rel="stylesheet" href="/views/css/trang-ch.css" />
+<link rel="stylesheet" href="/views/css/thanh-ton-hon-thnh.css" />
+  <link rel="stylesheet" href="/views/css/signup.css" />
+  <link rel="stylesheet" href="/views/css/chi-tit-nick-game.css" />
+  <link rel="stylesheet" href="/views/css/nick-game.css" />
+  <link href="/views/css/thanh-ton.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/views/css/lch-s-giao-dch.css" />
+  <link rel="stylesheet" href="/views/css/trang-chi-tit-ti-khon.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+	<nav th:insert="~{/views/layout/navbar.html::navbar}"></nav>
+	
+	<div th:replace="${view}"></div>
+	
+	<footer th:insert="~{/views/layout/footer.html::footer}"></footer>
+</body>
+</html>

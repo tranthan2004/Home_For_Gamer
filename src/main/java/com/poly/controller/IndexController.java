@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.poly.dao.ListAccountTradeDao;
 import com.poly.entity.ListAccountTrade;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 @Controller
 public class IndexController {
@@ -42,4 +44,9 @@ public class IndexController {
         model.addAttribute("acc", acc);
         return "/views/detail";
     }
+	@RequestMapping(value="/layout")
+	public String layout() {
+		return "/views/layout";
+	}
+	
 }

@@ -111,6 +111,9 @@ input:focus{
   justify-content: space-between;
   gap: var(--gap-xl);
 }
+.page-info a {
+  color: aliceblue;
+}
 .navigation-container,
 .navigation-container-wrapper {
   display: flex;

@@ -9,7 +9,7 @@
 
 <body>
 	 
-    <input id="ngNhan" value="ErmnLp4YsZPk1hHW6RaPeDbaRKVT5WCHsTDEHvgBZkDS" type="hidden" />            
+    <input id="ngNhan" value="Hvtwn1M5itPV9mZkEimmuVqeoY5px6GDjdaTQ8vMokU5" type="hidden" />            
       <td style="width: 400px;">
                 <p id="key"></p>
             </td>           
@@ -42,7 +42,7 @@
 				</div>
 				<div class="v253_536">
 					<span class="v253_520">GIÁ TIỀN:</span> <span class="v253_521"><input
-						id="vnd" class="v253_519" th:value="${acc.price}"  th:text="${acc.price}" /></span>
+						id="vnd" class="v253_519" th:value="${acc.price}" th:text="${acc.price}" /></span>
 				</div>
 				<span class="v253_533">TỔNG THANH TOÁN:</span> <span
 					class="v253_538" >123</span>
@@ -116,7 +116,7 @@
     
     async function getProvider() {
         if ("solana" in window) {
-            const provider = window.solana;
+        	const provider = await window.solana;
             if (provider.isPhantom) {
                 console.log("Is Phantom installed?  ", provider.isPhantom);
                 document.getElementById("pro").innerHTML = "Phantom Wallet is installed";
@@ -140,12 +140,7 @@
     }
 
     async function transferSOL() {
-        const {
-            Connection,
-            Transaction,
-            SystemProgram,
-            PublicKey
-        } = solanaWeb3;
+        const { Connection, Transaction, SystemProgram, PublicKey } = solanaWeb3;
 
         if (!window.solana || !window.solana.isPhantom) {
             alert("Chưa kết nối ví");
@@ -156,35 +151,33 @@
             // Lấy provider Phantom wallet
             const provider = window.solana;
 
-            //Lấy public key của ví
-            const fromPublicKey = provider.publicKey;
+            // Lấy public key của ví
+            const fromPublicKey = new PublicKey(provider.publicKey.toString());
             if (!fromPublicKey) {
                 alert("Vui lòng kết nối ví Phantom trước khi thực hiện giao dịch.");
                 return;
             }
+
             // Kết nối với mạng Devnet Solana
             const connection = new Connection("https://api.devnet.solana.com", "confirmed");
 
             // Số lamports cần gửi
-            var lamportsToSend = document.getElementById('vnd').value;
-
-            const lambordsVnd = await convertVND(lamportsToSend);
-
-
-            const toPublicKey = document.getElementById('ngNhan').value;
-
+            const lamportsToSend = document.getElementById('vnd').value;
+            const lamports = await convertVND(lamportsToSend);
+            const toPublicKey = new PublicKey(document.getElementById('ngNhan').value);
 
             // Tạo giao dịch truyền tiền
             const transaction = new Transaction().add(
                 SystemProgram.transfer({
                     fromPubkey: fromPublicKey,
-                    toPubkey: new PublicKey(toPublicKey),
-                    lamports: lambordsVnd,
+                    toPubkey: toPublicKey,
+                    lamports: lamports,
                 })
             );
 
             // Gán recentBlockhash và feePayer
-            transaction.recentBlockhash = (await connection.getRecentBlockhash()).blockhash;
+            const { blockhash } = await connection.getLatestBlockhash();
+            transaction.recentBlockhash = blockhash;
             transaction.feePayer = fromPublicKey;
 
             // Ký giao dịch với Phantom wallet
@@ -193,34 +186,21 @@
             // Xác nhận giao dịch
             await connection.confirmTransaction(signature, 'confirmed');
 
-            // const encodedMessage = new TextEncoder().encode("Message to sign");
-            // const signedMessage = await window.solana.request({
-            //     method: "signMessage",
-            //     params: {
-            //         message: encodedMessage,
-            //         display: "utf8",
-            //     },
-            // });
-            // console.log("Message đã ký:", signedMessage);
-
             console.log("Giao dịch thành công! Signature:", signature);
 
             const getBalanceCurrent = await getBalance();
-			
-           
-            
-            alert(`Bạn đã giao dịch thành công: ${lambordsVnd} và số dư của bạn còn lại: ${getBalanceCurrent}`);
-        } catch (error) {
-            if (error.message == "User rejected the request.") {
-                alert("Bạn đã hủy thanh toán")
 
+            alert(`Bạn đã giao dịch thành công: ${lamports} lamports và số dư của bạn còn lại: ${getBalanceCurrent}`);
+        } catch (error) {
+            if (error.message === "User rejected the request.") {
+                alert("Bạn đã hủy thanh toán");
             } else {
-                alert("Lỗi xảy ra")
+                alert("Lỗi xảy ra");
                 console.error("Lỗi:", error);
             }
-
         }
     }
+
 
     async function getBalance() {
         const {
