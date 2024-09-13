@@ -19,7 +19,7 @@
         <div class="v253_531">
             <div class="v250_494"></div>
             <div class="v250_496"></div><span class="v250_495">XÁC NHẬN THÔNG TIN THANH TOÁN</span><span
-                class="v250_497">THÔNG TIN TÀI KHOẢN: SA4565AS</span>
+                class="v250_497">THÔNG TIN TÀI KHOẢN: <span class="v253_513" th:text="${acc.nameaccount}"></span> </span>
             <div class="v253_528"></div>
             <div class="v253_529"></div>
             <div class="v253_530"></div>
@@ -34,18 +34,18 @@
 				</div>
 				<div class="v253_535">
 					<span class="v253_516">TƯỚNG:</span> <span class="v253_517"
-						>123</span>
+						>153</span>
 				</div>
 				<div class="v253_537">
 					<span class="v253_518">TRANG PHỤC:</span> <span class="v253_519"
-						>1233</span>
+						>254</span>
 				</div>
 				<div class="v253_536">
 					<span class="v253_520">GIÁ TIỀN:</span> <span class="v253_521"><input
 						id="vnd" class="v253_519" th:value="${acc.price}" th:text="${acc.price}" /></span>
 				</div>
 				<span class="v253_533">TỔNG THANH TOÁN:</span> <span
-					class="v253_538" >123</span>
+					class="v253_538" th:text="${acc.price}" ></span>
 			</div>
 
 		</div>

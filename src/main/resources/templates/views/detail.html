@@ -19,11 +19,9 @@
       
       <div class="line-parent">
         <div class="line-div"></div>
-        <img class="polygon-icon" alt="" src="/image/polygon-1.svg" />
       </div>
       <div class="line-group">
         <div class="line-div"></div>
-        <img class="polygon-icon" alt="" src="/image/polygon-1.svg" />
       </div>
       <div class="chi-tit-nick-game-child"></div>
       <b class="rank-lh-vng-container">
@@ -31,8 +29,8 @@
         <span class="vng-ii"> VÀNG II </span>
       </b>
       <b class="m-ti-khon-container">
-        <span>MÃ TÀI KHOẢN : </span>
-        <span class="vng-ii">S456AS</span>
+        <span>MÃ TÀI KHOẢN :  <span class="vng-ii" th:text="${acc.nameaccount}"></span> </span>
+       
       </b>
       <b class="khung-bilgewater">
         <span>KHUNG:</span>
@@ -52,10 +50,10 @@
       <img
         class="thit-k-cha-c-tn-1"
         alt=""
-        th:src="@{/image/{image}(image=${acc.image3})}"
+        th:src="@{/image/{image}(image=${acc.image3})}" 
       />
 
-      <img class="trangphuc-1-icon" alt="" th:src="@{/image/{image}(image=${acc.image2})}" />
+      <img class="trangphuc-1-icon" alt=" " th:src="@{/image/{image}(image=${acc.image2})}" />
 
       <div class="footer20">
         <div class="footer-child8"></div>
